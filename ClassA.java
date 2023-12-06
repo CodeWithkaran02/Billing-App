@@ -7,8 +7,8 @@ public class ClassA {
     int c = 3;
     int d = 4;
 
-    void meth(int rs) {
-        int bill = rs * 100;
+    void meth(int unit) {
+        int bill = unit * 100;
         if (bill >= 100) {
             int discount = (bill / 100) * 10;
             System.out.println("your final-bill is :" + (bill - discount));
@@ -21,26 +21,57 @@ public class ClassA {
 
     void meth1() {
 
-        System.out.println("Friute ");
-        System.out.println("Vegetable");
-        System.out.println("Cosmetics");
-        System.out.println("Masala powder");
+        System.out.println("1) Friute ");
+        System.out.println("2) Vegetable");
+        System.out.println("3) Cosmetics");
+        System.out.println("4) Masala powder");
+
+        System.out.println("-----------------------");
+        System.out.println("Plese Enter a Valid Option");
 
         Scanner sc = new Scanner(System.in);
+
+        int option = sc.nextInt();
         sc.nextLine();
 
-        if (a == 1) {
+        ClassA obj = new ClassA();
 
-            int key = 101;
+        System.out.println("--------------------------");
 
-            switch (key) {
+        if (option == 1) {
+            System.out.println("Furite 1");
+
+            System.out.println("101) Apple");
+            System.out.println("102) Banana");
+            System.out.println("103) Grapes");
+            System.out.println("104) Mango");
+            System.out.println("105) Orange");
+
+            System.out.println("-----------------------");
+            System.out.println("Plese Enter a Valid Option");
+
+            int option1 = sc.nextInt();
+            sc.nextLine();
+
+            System.out.println("--------------------------");
+
+            switch (option1) {
                 case 101:
-                    System.out.println();
 
+                    System.out.println("apple is good for the health");
+                    System.out.println("how much you need?");
+                    int unit101 = sc.nextInt();
+                    // sc.nextInt();
+                    System.out.println("Your unit is:" + unit101);
+                    new ClassA().meth(4);
                     break;
 
                 case 102:
-                    System.out.println();
+                    System.out.println("Banana is good for the health");
+                    System.out.println("how much you need?");
+                    int unit1 = sc.nextInt();
+                    sc.nextInt();
+                    System.out.println(unit1);
 
                     break;
                 case 103:
@@ -59,11 +90,14 @@ public class ClassA {
                     break;
             }
 
-        } else if (b == 2) {
+        } else if (option == 2) {
+            System.out.println(" Vegetable 2");
 
-        } else if (c == 3) {
+        } else if (option == 3) {
+            System.out.println(" Cosmetics 3");
 
-        } else if (d == 4) {
+        } else if (option == 4) {
+            System.out.println(" Masala powder 4");
 
         }
 
