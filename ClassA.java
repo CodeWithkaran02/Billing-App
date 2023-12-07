@@ -7,8 +7,14 @@ public class ClassA {
     int c = 3;
     int d = 4;
 
-    void meth(int unit) {
-        int bill = unit * 100;
+    void meth(int repeis) {
+        Scanner sc = new Scanner(System.in);
+        // System.out.println("How much you need?");
+        // System.out.println("Enter the unit:");
+        int unit = sc.nextInt();
+        sc.nextLine();
+
+        int bill = unit * repeis;
         if (bill >= 100) {
             int discount = (bill / 100) * 10;
             System.out.println("your final-bill is :" + (bill - discount));
@@ -19,20 +25,45 @@ public class ClassA {
 
     }
 
+    void called() {
+        Scanner cl = new Scanner(System.in);
+        System.out.println("Press the valid Call");
+        System.out.println("Press 01 is Continue:");
+        System.out.println("Press 02 is stop:");
+
+        int a = 01;
+        // cl.nextLine();
+        int b = 02;
+        // cl.nextLine();
+
+        if (a == 01) {
+            System.out.println(a);
+
+            new ClassA().meth1();
+        } else if (a == 02) {
+            System.out.println(b);
+
+            new ClassA().address();
+
+        } else {
+            System.out.println("Wrong input");
+        }
+
+    }
+
     void meth1() {
 
         System.out.println("1) Friute ");
         System.out.println("2) Vegetable");
         System.out.println("3) Cosmetics");
         System.out.println("4) Masala powder");
-
         System.out.println("-----------------------");
         System.out.println("Plese Enter a Valid Option");
 
         Scanner sc = new Scanner(System.in);
 
         int option = sc.nextInt();
-        sc.nextLine();
+        // sc.nextLine();
 
         ClassA obj = new ClassA();
 
@@ -60,18 +91,25 @@ public class ClassA {
 
                     System.out.println("apple is good for the health");
                     System.out.println("how much you need?");
-                    int unit101 = sc.nextInt();
+                    int unit = sc.nextInt();
                     // sc.nextInt();
-                    System.out.println("Your unit is:" + unit101);
-                    new ClassA().meth(4);
+                    System.out.println("Your unit is:" + unit);
+                    ClassA aobj101 = new ClassA();
+
+                    aobj101.meth(100);
+                    aobj101.called();
+
                     break;
 
                 case 102:
                     System.out.println("Banana is good for the health");
                     System.out.println("how much you need?");
                     int unit1 = sc.nextInt();
-                    sc.nextInt();
-                    System.out.println(unit1);
+                    System.out.println("Your unit is:" + unit1);
+                    ClassA aobj102 = new ClassA();
+                    aobj102.called();
+
+                    aobj102.meth(60);
 
                     break;
                 case 103:
@@ -104,6 +142,13 @@ public class ClassA {
         else {
             System.out.println("Please Enter right input ");
         }
+    }
+
+    void address() {
+        System.out.println("Enter your name");
+        Scanner sc = new Scanner(System.in);
+        String name = sc.nextLine();
+
     }
 
     public static void main(String[] args) {
