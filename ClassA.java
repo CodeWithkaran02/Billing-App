@@ -225,6 +225,70 @@ public class ClassA {
 
         } else if (option == 3) {
             System.out.println(" Cosmetics 3");
+            int option3 = sc.nextInt();
+            sc.nextLine();
+            switch (option3) {
+                case 101:
+                    ClassA aobj101 = new ClassA();
+                    System.out.println("apple is good for the health");
+                    System.out.println("-----------------------");
+                    System.out.println("how much you need?");
+                    int unit = sc.nextInt();
+                    aobj101.address();
+                    // sc.nextInt();
+                    System.out.println("Your unit is:" + unit);
+
+                    aobj101.meth(100);
+                    // aobj101.called();
+
+                    break;
+
+                case 102:
+                    System.out.println("Banana is good for the health");
+                    System.out.println("-----------------------");
+                    System.out.println("how much you need?");
+                    int unit1 = sc.nextInt();
+
+                    System.out.println("Your unit is:" + unit1);
+                    ClassA aobj102 = new ClassA();
+                    aobj102.called();
+
+                    aobj102.meth(60);
+
+                    break;
+                case 103:
+                    System.out.println("Grapas is impontant for teeth");
+                    System.out.println("-----------------------");
+                    System.out.println("how much you need?");
+
+                    int unit2 = sc.nextInt();
+
+                    System.out.println("Your unit is:" + unit2);
+                    meth(140);
+
+                    break;
+                case 104:
+                    System.out.println("Mango is king for Furite");
+                    System.out.println("-----------------------");
+                    System.out.println("how much you need?");
+                    int unit3 = sc.nextInt();
+
+                    System.out.println("Your unit is:" + unit3);
+                    meth(60);
+                    break;
+                case 105:
+                    System.out.println("Orange is good in Winter ");
+                    System.out.println("-----------------------");
+                    System.out.println("how much you need?");
+                    int unit4 = sc.nextInt();
+
+                    System.out.println("Your unit is:" + unit4);
+                    meth(60);
+
+                    break;
+                default:
+                    break;
+            }
 
         } else if (option == 4) {
             System.out.println(" Masala powder 4");
