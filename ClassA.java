@@ -12,13 +12,15 @@ public class ClassA {
         // System.out.println("How much you need?");
         // System.out.println("Enter the unit:");
         int unit = sc.nextInt();
-        sc.nextLine();
+        // sc.nextLine();
 
         int bill = unit * repeis;
         if (bill >= 100) {
             int discount = (bill / 100) * 10;
             called();
+
             System.out.println("your final-bill is :" + (bill - discount));
+
             System.out.println("conglution your have saved " + discount + " on your final bill");
         } else {
             System.out.println("you final bill is :" + bill);
@@ -62,6 +64,7 @@ public class ClassA {
         System.out.println("4) Masala powder");
         System.out.println("-----------------------");
         System.out.println("Plese Enter a Valid Option");
+        System.out.println("-----------------------");
 
         Scanner sc = new Scanner(System.in);
 
@@ -75,12 +78,12 @@ public class ClassA {
         if (option == 1) {
             System.out.println("Furite 1");
 
+            System.out.println("-----------------------");
             System.out.println("101) Apple");
             System.out.println("102) Banana");
             System.out.println("103) Grapes");
             System.out.println("104) Mango");
             System.out.println("105) Orange");
-
             System.out.println("-----------------------");
             System.out.println("Plese Enter a Valid Option");
 
@@ -155,6 +158,71 @@ public class ClassA {
         } else if (option == 2) {
             System.out.println(" Vegetable 2");
 
+            int option2 = sc.nextInt();
+            sc.nextLine();
+            switch (option2) {
+                case 201:
+                    ClassA aobj101 = new ClassA();
+                    System.out.println("apple is good for the health");
+                    System.out.println("-----------------------");
+                    System.out.println("how much you need?");
+                    int unit = sc.nextInt();
+                    aobj101.address();
+                    // sc.nextInt();
+                    System.out.println("Your unit is:" + unit);
+
+                    aobj101.meth(100);
+                    // aobj101.called();
+
+                    break;
+
+                case 202:
+                    System.out.println("Banana is good for the health");
+                    System.out.println("-----------------------");
+                    System.out.println("how much you need?");
+                    int unit1 = sc.nextInt();
+
+                    System.out.println("Your unit is:" + unit1);
+                    ClassA aobj102 = new ClassA();
+                    aobj102.called();
+
+                    aobj102.meth(60);
+
+                    break;
+                case 203:
+                    System.out.println("Grapas is impontant for teeth");
+                    System.out.println("-----------------------");
+                    System.out.println("how much you need?");
+
+                    int unit2 = sc.nextInt();
+
+                    System.out.println("Your unit is:" + unit2);
+                    meth(140);
+
+                    break;
+                case 204:
+                    System.out.println("Mango is king for Furite");
+                    System.out.println("-----------------------");
+                    System.out.println("how much you need?");
+                    int unit3 = sc.nextInt();
+
+                    System.out.println("Your unit is:" + unit3);
+                    meth(60);
+                    break;
+                case 205:
+                    System.out.println("Orange is good in Winter ");
+                    System.out.println("-----------------------");
+                    System.out.println("how much you need?");
+                    int unit4 = sc.nextInt();
+
+                    System.out.println("Your unit is:" + unit4);
+                    meth(60);
+
+                    break;
+                default:
+                    break;
+            }
+
         } else if (option == 3) {
             System.out.println(" Cosmetics 3");
 
@@ -170,6 +238,8 @@ public class ClassA {
 
     void address() {
 
+        System.out.println("-----------------------");
+
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter your name");
 
@@ -177,6 +247,7 @@ public class ClassA {
 
         System.out.println("Enter your Number:");
         String num = sc.nextLine();
+        System.out.println("-----------------------");
 
     }
 
