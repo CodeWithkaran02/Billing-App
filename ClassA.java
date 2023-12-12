@@ -163,7 +163,7 @@ public class ClassA {
             switch (option2) {
                 case 201:
                     ClassA aobj101 = new ClassA();
-                    System.out.println("apple is good for the health");
+                    System.out.println("Patato is good for the health");
                     System.out.println("-----------------------");
                     System.out.println("how much you need?");
                     int unit = sc.nextInt();
@@ -171,13 +171,13 @@ public class ClassA {
                     // sc.nextInt();
                     System.out.println("Your unit is:" + unit);
 
-                    aobj101.meth(100);
+                    aobj101.meth(80);
                     // aobj101.called();
 
                     break;
 
                 case 202:
-                    System.out.println("Banana is good for the health");
+                    System.out.println("Cauliflower is good for the health");
                     System.out.println("-----------------------");
                     System.out.println("how much you need?");
                     int unit1 = sc.nextInt();
@@ -190,33 +190,33 @@ public class ClassA {
 
                     break;
                 case 203:
-                    System.out.println("Grapas is impontant for teeth");
+                    System.out.println("Tamato is impontant for teeth");
                     System.out.println("-----------------------");
                     System.out.println("how much you need?");
 
                     int unit2 = sc.nextInt();
 
                     System.out.println("Your unit is:" + unit2);
-                    meth(140);
+                    meth(40);
 
                     break;
                 case 204:
-                    System.out.println("Mango is king for Furite");
+                    System.out.println("Onion is king for Furite");
                     System.out.println("-----------------------");
                     System.out.println("how much you need?");
                     int unit3 = sc.nextInt();
 
                     System.out.println("Your unit is:" + unit3);
-                    meth(60);
+                    meth(50);
                     break;
                 case 205:
-                    System.out.println("Orange is good in Winter ");
+                    System.out.println("Gralic is good in Winter ");
                     System.out.println("-----------------------");
                     System.out.println("how much you need?");
                     int unit4 = sc.nextInt();
 
                     System.out.println("Your unit is:" + unit4);
-                    meth(60);
+                    meth(200);
 
                     break;
                 default:
@@ -228,9 +228,9 @@ public class ClassA {
             int option3 = sc.nextInt();
             sc.nextLine();
             switch (option3) {
-                case 101:
+                case 301:
                     ClassA aobj101 = new ClassA();
-                    System.out.println("apple is good for the health");
+                    System.out.println("Compact");
                     System.out.println("-----------------------");
                     System.out.println("how much you need?");
                     int unit = sc.nextInt();
@@ -238,13 +238,13 @@ public class ClassA {
                     // sc.nextInt();
                     System.out.println("Your unit is:" + unit);
 
-                    aobj101.meth(100);
+                    aobj101.meth(250);
                     // aobj101.called();
 
                     break;
 
-                case 102:
-                    System.out.println("Banana is good for the health");
+                case 302:
+                    System.out.println("lipstic ");
                     System.out.println("-----------------------");
                     System.out.println("how much you need?");
                     int unit1 = sc.nextInt();
@@ -253,31 +253,31 @@ public class ClassA {
                     ClassA aobj102 = new ClassA();
                     aobj102.called();
 
-                    aobj102.meth(60);
+                    aobj102.meth(140);
 
                     break;
-                case 103:
-                    System.out.println("Grapas is impontant for teeth");
+                case 303:
+                    System.out.println("eyeLiner ");
                     System.out.println("-----------------------");
                     System.out.println("how much you need?");
 
                     int unit2 = sc.nextInt();
 
-                    System.out.println("Your unit is:" + unit2);
+                    System.out.println(" unit is:" + unit2);
                     meth(140);
 
                     break;
-                case 104:
-                    System.out.println("Mango is king for Furite");
+                case 304:
+                    System.out.println("Kajal ");
                     System.out.println("-----------------------");
                     System.out.println("how much you need?");
                     int unit3 = sc.nextInt();
 
                     System.out.println("Your unit is:" + unit3);
-                    meth(60);
+                    meth(50);
                     break;
-                case 105:
-                    System.out.println("Orange is good in Winter ");
+                case 305:
+                    System.out.println("Moisturizer ");
                     System.out.println("-----------------------");
                     System.out.println("how much you need?");
                     int unit4 = sc.nextInt();
@@ -292,6 +292,71 @@ public class ClassA {
 
         } else if (option == 4) {
             System.out.println(" Masala powder 4");
+
+            int option4 = sc.nextInt();
+            sc.nextLine();
+            switch (option4) {
+                case 301:
+                    ClassA aobj101 = new ClassA();
+                    System.out.println("Masala powder 4");
+                    System.out.println("-----------------------");
+                    System.out.println("how much you need?");
+                    int unit = sc.nextInt();
+                    aobj101.address();
+                    // sc.nextInt();
+                    System.out.println("Your unit is:" + unit);
+
+                    aobj101.meth(250);
+                    // aobj101.called();
+
+                    break;
+
+                case 302:
+                    System.out.println("lipstic ");
+                    System.out.println("-----------------------");
+                    System.out.println("how much you need?");
+                    int unit1 = sc.nextInt();
+
+                    System.out.println("Your unit is:" + unit1);
+                    ClassA aobj102 = new ClassA();
+                    aobj102.called();
+
+                    aobj102.meth(140);
+
+                    break;
+                case 303:
+                    System.out.println("eyeLiner ");
+                    System.out.println("-----------------------");
+                    System.out.println("how much you need?");
+
+                    int unit2 = sc.nextInt();
+
+                    System.out.println(" unit is:" + unit2);
+                    meth(140);
+
+                    break;
+                case 304:
+                    System.out.println("Kajal ");
+                    System.out.println("-----------------------");
+                    System.out.println("how much you need?");
+                    int unit3 = sc.nextInt();
+
+                    System.out.println("Your unit is:" + unit3);
+                    meth(50);
+                    break;
+                case 305:
+                    System.out.println("Moisturizer ");
+                    System.out.println("-----------------------");
+                    System.out.println("how much you need?");
+                    int unit4 = sc.nextInt();
+
+                    System.out.println("Your unit is:" + unit4);
+                    meth(60);
+
+                    break;
+                default:
+                    break;
+            }
 
         }
 
