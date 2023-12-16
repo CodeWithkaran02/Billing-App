@@ -163,7 +163,7 @@ public class ClassA {
             switch (option2) {
                 case 201:
                     ClassA aobj101 = new ClassA();
-                    System.out.println("Patato is good for the health");
+                    System.out.println("Patato is king of Vegetable ");
                     System.out.println("-----------------------");
                     System.out.println("how much you need?");
                     int unit = sc.nextInt();
@@ -177,7 +177,7 @@ public class ClassA {
                     break;
 
                 case 202:
-                    System.out.println("Cauliflower is good for the health");
+                    System.out.println("Cauliflower is love for test");
                     System.out.println("-----------------------");
                     System.out.println("how much you need?");
                     int unit1 = sc.nextInt();
@@ -190,7 +190,7 @@ public class ClassA {
 
                     break;
                 case 203:
-                    System.out.println("Tamato is impontant for teeth");
+                    System.out.println("Tamato is vegetables by nutritionists");
                     System.out.println("-----------------------");
                     System.out.println("how much you need?");
 
@@ -201,7 +201,7 @@ public class ClassA {
 
                     break;
                 case 204:
-                    System.out.println("Onion is king for Furite");
+                    System.out.println("Onion is are a root vegetable");
                     System.out.println("-----------------------");
                     System.out.println("how much you need?");
                     int unit3 = sc.nextInt();
@@ -210,7 +210,7 @@ public class ClassA {
                     meth(50);
                     break;
                 case 205:
-                    System.out.println("Gralic is good in Winter ");
+                    System.out.println("Gralic is herbs around the word ");
                     System.out.println("-----------------------");
                     System.out.println("how much you need?");
                     int unit4 = sc.nextInt();
