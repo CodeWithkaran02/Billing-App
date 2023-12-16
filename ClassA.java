@@ -47,7 +47,9 @@ public class ClassA {
         } else if (a == 02) {
             System.out.println(b);
 
-            new ClassA().address();
+            ClassA ao = new ClassA();
+            ao.address();
+            ao.bill();
 
         } else {
             System.out.println("Wrong input");
@@ -157,6 +159,14 @@ public class ClassA {
 
         } else if (option == 2) {
             System.out.println(" Vegetable 2");
+            System.out.println("-----------------------");
+            System.out.println("201) Patato");
+            System.out.println("202) Cauliflower");
+            System.out.println("203) Tamato ");
+            System.out.println("204) Onion");
+            System.out.println("205) Gralic");
+            System.out.println("-----------------------");
+            System.out.println("Plese Enter a Valid Option");
 
             int option2 = sc.nextInt();
             sc.nextLine();
@@ -225,6 +235,15 @@ public class ClassA {
 
         } else if (option == 3) {
             System.out.println(" Cosmetics 3");
+            System.out.println("-----------------------");
+            System.out.println("301) Compact");
+            System.out.println("302) lipstic");
+            System.out.println("303) eyeLiner");
+            System.out.println("304) Kajal");
+            System.out.println("305) Moisturizer");
+            System.out.println("-----------------------");
+            System.out.println("Plese Enter a Valid Option");
+
             int option3 = sc.nextInt();
             sc.nextLine();
             switch (option3) {
@@ -292,13 +311,21 @@ public class ClassA {
 
         } else if (option == 4) {
             System.out.println(" Masala powder 4");
+            System.out.println("-----------------------");
+            System.out.println("401) Black peporment");
+            System.out.println("402) Thikha lal ");
+            System.out.println("403) Mix Masala");
+            System.out.println("404) Dhaniya Powder");
+            System.out.println("405) Orange");
+            System.out.println("-----------------------");
+            System.out.println("Plese Enter a Valid Option");
 
             int option4 = sc.nextInt();
             sc.nextLine();
             switch (option4) {
-                case 301:
+                case 401:
                     ClassA aobj101 = new ClassA();
-                    System.out.println("Masala powder 4");
+                    System.out.println("Black peporment 4");
                     System.out.println("-----------------------");
                     System.out.println("how much you need?");
                     int unit = sc.nextInt();
@@ -311,8 +338,8 @@ public class ClassA {
 
                     break;
 
-                case 302:
-                    System.out.println("lipstic ");
+                case 402:
+                    System.out.println("Thikha lal ");
                     System.out.println("-----------------------");
                     System.out.println("how much you need?");
                     int unit1 = sc.nextInt();
@@ -324,8 +351,8 @@ public class ClassA {
                     aobj102.meth(140);
 
                     break;
-                case 303:
-                    System.out.println("eyeLiner ");
+                case 403:
+                    System.out.println("Mix Masala ");
                     System.out.println("-----------------------");
                     System.out.println("how much you need?");
 
@@ -335,8 +362,8 @@ public class ClassA {
                     meth(140);
 
                     break;
-                case 304:
-                    System.out.println("Kajal ");
+                case 404:
+                    System.out.println("Dhaniya Powder");
                     System.out.println("-----------------------");
                     System.out.println("how much you need?");
                     int unit3 = sc.nextInt();
@@ -344,8 +371,8 @@ public class ClassA {
                     System.out.println("Your unit is:" + unit3);
                     meth(50);
                     break;
-                case 305:
-                    System.out.println("Moisturizer ");
+                case 405:
+                    System.out.println("Jira powder ");
                     System.out.println("-----------------------");
                     System.out.println("how much you need?");
                     int unit4 = sc.nextInt();
@@ -371,13 +398,20 @@ public class ClassA {
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter your name");
-
         String name = sc.nextLine();
+        System.out.println(name);
 
         System.out.println("Enter your Number:");
         String num = sc.nextLine();
+        System.out.println(num);
         System.out.println("-----------------------");
 
+    }
+
+    void bill() {
+
+        System.out.println("=====================");
+        new ClassA().address();
     }
 
     public static void main(String[] args) {
